@@ -99,14 +99,14 @@ for line in test_data:
     if (len(line) == 9):
         x_min = 0
         for number in line:
-            x_max = x_min + 0.8
+            x_max = x_min + 9.8
             y_max = y_min + 0.8
             z_min = 0
             z_max = float(number) * 0.1
             cuboid(block_count, x_min, x_max, y_min, y_max, z_min, z_max, vert, text, face)
-            block_count = block_count + 1
             vert = vert + 8
             text = text + 14
             face = face + 6
-            x_min = x_min + 1
+            x_min = x_min + 10
         y_min = y_min + 1
+        block_count = block_count + 1
